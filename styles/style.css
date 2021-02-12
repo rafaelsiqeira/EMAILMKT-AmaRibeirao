@@ -1,0 +1,128 @@
+@font-face {
+    font-family: "Museo Sans";
+    src: url(../font/MuseoSans-100.otf) format("otf"),
+    url(../font/MuseoSans-300.otf) format("otf"),
+    url(../font/MuseoSans_500.otf) format("otf"),
+    url(../font/MuseoSans_700.otf) format("otf");
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #2b4194;
+    font-family: 'Museo Sans', sans-serif;
+    /*width: 35%;
+    margin: 0 auto;*/
+}
+
+img.header {
+    width: 100%;
+}
+
+header > h2 {
+    width: 100%;
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-shadow: 3px 3px 0 rgb(0 0 0 / 13%);
+}
+
+h2 {
+    color: #00aeff;
+    font-size: 65px;
+    line-height: 1;
+    margin-bottom: 0;
+}
+
+section {
+    padding: 10px 40px;
+}
+
+.bg-on {
+    background-color: #2b4194;
+    color: #fff;
+}
+
+.content {
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-detail-left {
+    background-image: url(../images/detail-left.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: contain;
+}
+
+.bg-detail-right {
+    background-image: url(../images/detail-right.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: contain;
+}
+
+.bg-on, .bg-detail-left, .bg-detail-right {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.doacao {
+    display: inline-block;
+    background: #fff;
+    color: #2b4194;
+    padding: 10px 70px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 45px
+}
+
+p {
+    font-weight: 500;
+    font-size: 45px;
+}
+
+p > span {
+    color: #35bdff;
+    font-weight: 700;
+}
+
+.content p {
+    font-weight: 400;
+    font-size: 45px;
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 425px){
+    section {
+        padding: 10px;
+    }
+
+    header > h2,
+    .doacao,
+    p {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
+
+}
